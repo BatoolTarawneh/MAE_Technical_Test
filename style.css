@@ -1,0 +1,7 @@
+:root{
+    --primary: rgb(255, 81, 0);
+    --secondary:rgb(126, 109, 194) ;
+}
+.header-main-section{
+background: linear-gradient(125deg,var(--secondary),var(--primary))
+;}
