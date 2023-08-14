@@ -1,7 +1,139 @@
-:root{
-    --primary: rgb(255, 81, 0);
-    --secondary:rgb(126, 109, 194) ;
+@import url("https://fonts.googleapis.com/css2?family=Seymour+One&family=Sigmar+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
-.header-main-section{
-background: linear-gradient(125deg,var(--secondary),var(--primary))
-;}
+:root {
+  --primary: rgb(255, 81, 0);
+  --secondary: rgb(126, 109, 194);
+  --button: rgb(255, 165, 0);
+}
+.first{
+    background: linear-gradient(300deg, var(--primary), var(--secondary));
+}
+.header-main-section {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.logo{
+    /* border: 4px solid yellow; */
+  /* display: inline-block; */
+  align-items: center;
+  font-family: "seymour one";
+  color: orange;
+  padding-top: 0.8rem;
+}
+
+  .header-menu {
+   /* border: 4px solid wheat; */
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  
+  gap:3rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+  }
+  .button {
+    font-size: large;
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    background-color: var(--button);
+    border: 4px solid rgba(210, 190, 190, 0.878);
+    border-radius: 10%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+ 
+.slide1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.first-left{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+
+}
+
+.first-left h1{
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: white;
+
+}
+.first-left h4{
+    /* padding-top:2rem; */
+    font-size: 0.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.buttons{
+    /* border: 4px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 3rem; */
+    padding:2rem 4.6rem 0 0;
+    
+}
+.buttons>button{
+    color: brown;
+
+}
+.play-button{
+    font-size: large;
+    font-weight: 500;
+    padding: 1rem;
+    background-color: white;
+    border: 4px solid rgba(210, 190, 190, 0.878);
+    border-radius: 50%;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; 
+           
+}
+  .first-right{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .image-container{
+    width:20rem;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 15rem 15rem 0 0 ;
+    border: 10px solid gray;
+  }
+
+/*
+.header-continer {
+  display: flex;
+   flex-direction: column;
+  row-gap: 2rem; 
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+
+
+
+
+*/
