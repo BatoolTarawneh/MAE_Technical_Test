@@ -90,4 +90,18 @@ updateVisibleImageContainers();
     
 
 
-      
+
+const toTop = document.querySelector(".to-top")
+
+  window.onscroll=function(){
+    console.log(this.scrollY);
+    if(this.scrollY >= 100){
+      toTop.classList.add("show")
+    }
+    else{
+      toTop.classList.remove("show")
+
+    }
+  }
+
+
